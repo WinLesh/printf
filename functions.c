@@ -48,13 +48,10 @@ int print_string(va_list types, char buffer[],
 		if (precision >= 6)
 			str = "      ";
 	}
-
 	while (str[length] != '\0')
 		length++;
-
 	if (precision >= 0 && precision < length)
 		length = precision;
-
 	if (width > length)
 	{
 		if (flags & F_MINUS)
@@ -64,7 +61,6 @@ int print_string(va_list types, char buffer[],
 				write(1, " ", 1);
 			return (width);
 		}
-
 		else
 		{
 			for (i = width - length; i > 0; i--)
@@ -132,20 +128,16 @@ int print_int(va_list types, char buffer[],
 		num = (unsigned long int)((-1) * n);
 		is_negative = 1;
 	}
-
 	while (num > 0)
 	{
 		buffer[i--] = (num % 10) + '0';
 		num /= 10;
-	}
-	
+	}	
 	i++;
 
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
-
 /************************* PRINT BINARY *************************/
-
 /**
  *print_binary - Prints an unsigned number
  *@types: Lista of arguments
