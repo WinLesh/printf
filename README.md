@@ -1,7 +1,6 @@
 Working with my partner is cool
 Michael and Lesego 's own prinf is super cool
-<C-v>U1F60A<esc>
-:boom
+😂🤣✨💥💥💥💥💥💥💥💥
 
 Tasks
 0.Write a function that produces output according to a format.
