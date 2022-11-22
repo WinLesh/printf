@@ -3,8 +3,14 @@
 /**
  * get_flags - Calculates active flags
  * @format: Formatted string in which to print the arguments
+<<<<<<< HEAD
  *  @i: take a parameter.
  *  Return: Flags:
+=======
+ * @i: take a parameter.
+ * 
+ * Return: Flags:
+>>>>>>> f7842f6feae8579fb49dcf2f0d95a83a1bbfea9e
  */
 int get_flags(const char *format, int *i)
 {
@@ -23,6 +29,10 @@ int get_flags(const char *format, int *i)
 				flags |= FLAGS_ARR[j];
 				break;
 			}
+<<<<<<< HEAD
+=======
+
+>>>>>>> f7842f6feae8579fb49dcf2f0d95a83a1bbfea9e
 		if (FLAGS_CH[j] == 0)
 			break;
 	}
