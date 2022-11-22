@@ -11,6 +11,7 @@
  *@size: Size specifier
  *Return: Number of chars print
  */
+
 int print_char(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
@@ -99,7 +100,6 @@ int print_percent(va_list types, char buffer[],
 }
 
 /************************* PRINT INT *************************/
-B
 
 /**
  *print_int - Print int
